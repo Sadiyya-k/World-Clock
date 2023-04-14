@@ -52,6 +52,7 @@ function selectedCity(event) {
             "H:mm:ss"
           )}<small>${cityTime.format(" A")}</small></div>
         </div>
+        <a href="index.html">All cities<a/>
 `;
 }
 updateTime();
