@@ -9,13 +9,13 @@ function updateTime() {
     "H:mm:ss [<small>]A[</small>]"
   );
 
-  let bangkokElement = document.querySelector("#bangkok");
-  let bangkokDateElement = bangkokElement.querySelector(".date");
-  let bangkokTimeElement = bangkokElement.querySelector(".time");
-  let bangkokTime = moment().tz("Asia / Bangkok");
+  let melbourneElement = document.querySelector("#melbourne");
+  let melbourneDateElement = melbourneElement.querySelector(".date");
+  let melbourneTimeElement = melbourneElement.querySelector(".time");
+  let melbourneTime = moment().tz("Australia/Melbourne");
 
-  bangkokDateElement.innerHTML = bangkokTime.format("MMMM Do YYYY");
-  bangkokTimeElement.innerHTML = bangkokTime.format(
+  melbourneDateElement.innerHTML = melbourneTime.format("MMMM Do YYYY");
+  melbourneTimeElement.innerHTML = melbourneTime.format(
     "H:mm:ss [<small>]A[</small>]"
   );
 
@@ -28,5 +28,12 @@ function updateTime() {
   romeTimeElement.innerHTML = romeTime.format("H:mm:ss [<small>]A[</small>]");
 }
 
+function selectedCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityTime = moment().tz(cityTimeZone);
+}
 updateTime();
 setInterval(updateTime, 1000);
+
+let citiesSelectedElement = document.querySelector("#city");
+citiesSelectedElement.addEventListener("change", selectedCity);
