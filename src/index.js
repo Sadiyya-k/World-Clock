@@ -7,7 +7,7 @@ function updateTime() {
 
     istanbulDateElement.innerHTML = istanbulTime.format("MMMM Do YYYY");
     istanbulTimeElement.innerHTML = istanbulTime.format(
-      "H:mm:ss [<small>]A[</small>]"
+      "HH:mm:ss [<small>]A[</small>]"
     );
   }
 
@@ -19,7 +19,7 @@ function updateTime() {
 
     melbourneDateElement.innerHTML = melbourneTime.format("MMMM Do YYYY");
     melbourneTimeElement.innerHTML = melbourneTime.format(
-      "H:mm:ss [<small>]A[</small>]"
+      "HH:mm:ss [<small>]A[</small>]"
     );
   }
 
@@ -30,7 +30,7 @@ function updateTime() {
     let romeTime = moment().tz("Europe/Rome");
 
     romeDateElement.innerHTML = romeTime.format("MMMM Do YYYY");
-    romeTimeElement.innerHTML = romeTime.format("H:mm:ss [<small>]A[</small>]");
+    romeTimeElement.innerHTML = romeTime.format("HH:mm:ss [<small>]A[</small>]");
   }
 }
 
@@ -49,7 +49,7 @@ function selectedCity(event) {
             <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
           </div>
           <div class="time">${cityTime.format(
-            "H:mm:ss"
+            "HH:mm:ss"
           )}<small>${cityTime.format(" A")}</small></div>
         </div>
         <a href="index.html">Back to Homepage<a/>
