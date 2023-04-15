@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
@@ -13,7 +21,7 @@
     <div class="container">
       <h1>World Clock</h1>
 
-      <select id="city">
+      <select class="search-bar" id="city">
         <option value="">Select a city...</option>
         <option value="current">My current location</option>
         <option value="Europe/London">London</option>
@@ -50,8 +58,10 @@
     </div>
 
     <footer>
-      Coded by <strong>Sadiyya Khan</strong>, and is
-      <a href="https://world-clock-project-js-sk.netlify.app"
+      Coded by <strong>Sadiyya Khan</strong>, hosted on Netlify and is
+      <a
+        href="https://world-clock-project-js-sk.netlify.app"
+        class="footer-link"
         >open sourced on Github</a
       >
     </footer>

@@ -1,17 +1,18 @@
 body {
-  background-color: #f9f7fe;
-  font-family: sans-serif;
+  background-color: #f3e5da;
+  font-family: "Caveat", cursive;
 }
 
 h1 {
-  font-family: sans-serif;
-  font-size: 36px;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  font-size: 50px;
   text-align: center;
 }
 
 h2 {
   margin: 0 0 5px;
-  font-size: 28px;
+  font-size: 35px;
 }
 
 select {
@@ -22,14 +23,34 @@ select {
   padding: 10px;
 }
 
+a {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
 date {
   opacity: 0.6;
+}
+
+.date {
+  font-size: 30px;
+}
+
+.search-bar {
+  font-family: "Caveat", cursive;
+  font-size: 25px;
 }
 
 .container {
   max-width: 625px;
   margin: 60px auto;
-  background: white;
+  font-family: "Caveat", cursive;
+  background: #ded2ca;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 10px;
@@ -61,4 +82,8 @@ date {
 
 footer {
   text-align: center;
+  font-size: 30px;
+}
+.footer-link{
+    text-decoration: underline;
 }
