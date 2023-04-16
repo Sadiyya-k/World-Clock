@@ -66,7 +66,7 @@ function selectedCity(event) {
             "HH:mm:ss"
           )}<small>${cityTime.format(" A")}</small></div>
         </div>
-        <a href="index.html">Back to Homepage<a/>
+        <a href="index.html" class = "homepage">Back to Homepage<a/>
 `;
 }
 updateTime();

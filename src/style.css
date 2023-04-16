@@ -23,16 +23,6 @@ select {
   padding: 10px;
 }
 
-a {
-  font-size: 25px;
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  color: blue;
-}
-
 date {
   opacity: 0.6;
 }
@@ -44,6 +34,7 @@ date {
 .search-bar {
   font-family: "Caveat", cursive;
   font-size: 25px;
+  border-radius: 8px;
 }
 
 .container {
@@ -84,6 +75,17 @@ footer {
   text-align: center;
   font-size: 30px;
 }
-.footer-link{
-    text-decoration: underline;
+.footer-link {
+  text-decoration: underline;
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
+.homepage {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
 }
