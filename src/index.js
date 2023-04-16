@@ -1,4 +1,16 @@
 function updateTime() {
+  let londonElement = document.querySelector("#london");
+  if (londonElement) {
+    let londonDateElement = londonElement.querySelector(".date");
+    let londonTimeElement = londonElement.querySelector(".time");
+    let londonTime = moment().tz("Europe/London");
+
+    londonDateElement.innerHTML = londonTime.format("MMMM Do YYYY");
+    londonTimeElement.innerHTML = londonTime.format(
+      "HH:mm:ss [<small>]A[</small>]"
+    );
+  }
+
   let istanbulElement = document.querySelector("#istanbul");
   if (istanbulElement) {
     let istanbulDateElement = istanbulElement.querySelector(".date");
@@ -23,14 +35,16 @@ function updateTime() {
     );
   }
 
-  let romeElement = document.querySelector("#rome");
-  if (romeElement) {
-    let romeDateElement = romeElement.querySelector(".date");
-    let romeTimeElement = romeElement.querySelector(".time");
-    let romeTime = moment().tz("Europe/Rome");
+  let karachiElement = document.querySelector("#karachi");
+  if (karachiElement) {
+    let karachiDateElement = karachiElement.querySelector(".date");
+    let karachiTimeElement = karachiElement.querySelector(".time");
+    let karachiTime = moment().tz("Asia/Karachi");
 
-    romeDateElement.innerHTML = romeTime.format("MMMM Do YYYY");
-    romeTimeElement.innerHTML = romeTime.format("HH:mm:ss [<small>]A[</small>]");
+    karachiDateElement.innerHTML = karachiTime.format("MMMM Do YYYY");
+    karachiTimeElement.innerHTML = karachiTime.format(
+      "HH:mm:ss [<small>]A[</small>]"
+    );
   }
 }
 
